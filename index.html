@@ -32,7 +32,7 @@ a{color:inherit}a:focus-visible{outline:3px solid var(--accent);outline-offset:3
 .hero{width:100%;max-width:950px}
 .signature{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:15px;color:var(--muted);font-size:11px;letter-spacing:.035em}
 .signature:before,.signature:after{content:"";height:1px;background:#d5c8c6;width:37px}
-.signature .diamond{width:5px;height:5px;background:var(--accent);transform:rotate(45deg);display:inline-block;margin-right:2px}
+.signature .dot{width:6px;height:6px;background:var(--accent);border-radius:50%;display:inline-block;flex:0 0 auto}.signature .signature-text{color:var(--accent);font-weight:600;letter-spacing:.065em;text-transform:uppercase}
 .eyebrow{font-size:12px;color:var(--accent);font-weight:600;margin:0 0 9px}
 h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(36px,4.35vw,58px);font-weight:400;line-height:1.09;letter-spacing:-.043em;max-width:940px;margin:0 auto 13px}
 h1 em{font-style:normal;color:var(--accent)}
@@ -71,6 +71,7 @@ h1 em{font-style:normal;color:var(--accent)}
 </header>
 <main class="main">
 <section class="hero" aria-labelledby="headline">
+<div class="signature" aria-label="Une adresse naturelle à saisir"><span class="dot" aria-hidden="true"></span><span class="signature-text">Une adresse naturelle à saisir</span><span class="dot" aria-hidden="true"></span></div>
 <h1 id="headline">Une adresse plus intuitive.<br><em>Déjà utilisée par des clients.</em></h1>
 <p class="lead">Facile à saisir et à partager. Redirection possible vers un site existant.</p>
 </section>
